@@ -40,6 +40,7 @@ public class Usuario {
 	@Size(min = 5, max = 100)
 	private String senha;
 	
+	@Size (min = 5, max = 1000)
 	private String foto;
 	
 	@OneToMany(mappedBy = "criador", cascade = CascadeType.REMOVE)
